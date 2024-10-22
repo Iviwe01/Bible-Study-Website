@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Promises Bible Study Hub</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Meta tags for PWA -->
+    <meta name="theme-color" content="#5e9ca0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- iOS meta tags -->
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="https://www.bible.com" target="_blank">Bible</a></li> <!-- Updated Bible link -->
+                <li><a href="#daily-devotional">Daily Devotional</a></li>
+                <li><a href="#sermons">Sermons</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#prayer-wall">Prayer Wall</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="Search...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <h1>Welcome to The Promises Bible Study Hub</h1>
+            <p>Your journey to understanding the Bible starts here.</p>
+        </section>
+
+        <!-- Daily Devotional Section -->
+        <section id="daily-devotional">
+            <h2>Daily Devotional</h2>
+            <div id="daily-devotional-content">
+                <h3>Loading today's verse...</h3>
+            </div>
+            <!-- Social Sharing Buttons -->
+            <div class="social-share">
+                <p>Share today's devotional:</p>
+                <a href="#" id="share-devotional-facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" id="share-devotional-twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" id="share-devotional-whatsapp"><i class="fab fa-whatsapp"></i></a> <!-- WhatsApp -->
+                <a href="#" id="share-devotional-tiktok"><i class="fab fa-tiktok"></i></a> <!-- TikTok -->
+            </div>
+        </section>
+
+        <!-- Image Carousel Section -->
+        <section class="image-carousel">
+            <div id="carousel-container">
+                <img src="IMG-20240927-WA0025.jpg" class="carousel-image" alt="Image 1">
+                <img src="photo.jpg" class="carousel-image" alt="Image 2">
+                <img src="the_promises logo.jpg" class="carousel-image" alt="Image 3">
+            </div>
+            <button id="next-image-btn">...</button>
+        </section>
+
+        <!-- Sermon Section -->
+        <section id="sermons">
+            <h2>Recent Sermons</h2>
+            <div id="sermon-videos">
+                <video controls width="600">
+                    <source src="VID.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Watch our recent sermon: <strong>Embracing Faith</strong></p>
+                <!-- Social Sharing Buttons -->
+                <div class="social-share">
+                    <p>Share this sermon:</p>
+                    <a href="#" id="share-sermon-facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" id="share-sermon-twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" id="share-sermon-whatsapp"><i class="fab fa-whatsapp"></i></a> <!-- WhatsApp -->
+                    <a href="#" id="share-sermon-tiktok"><i class="fab fa-tiktok"></i></a> <!-- TikTok -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Church Events Section -->
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <div id="events-planner">
+                <ul id="events-list">
+                    <!-- Events will be loaded here -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- Interactive Prayer Wall -->
+        <section id="prayer-wall">
+            <h2>Prayer Wall</h2>
+            <div id="prayer-form">
+                <textarea id="prayer-text" placeholder="Enter your prayer request..."></textarea>
+                <button id="submit-prayer">Submit Prayer Request</button>
+            </div>
+            <div id="prayers">
+                <!-- Prayer requests will be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The Promises Bible Study Hub. All rights reserved.</p>
+    </footer>
+
+    <!-- Include Axios for HTTP requests -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Include service worker registration -->
+    <script src="sw-register.js"></script>
+    <!-- Main script -->
+    <script src="scripts.js"></script>
+</body>
+</html>

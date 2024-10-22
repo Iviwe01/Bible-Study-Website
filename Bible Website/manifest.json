@@ -1,0 +1,21 @@
+{
+    "short_name": "Bible Study",
+    "name": "The Promises Bible Study Hub",
+    "icons": [
+        {
+            "src": "the_promises logo.jpg",
+            "type": "image/jpg",
+            "sizes": "192x192"
+        },
+        {
+            "src": "icons/icon-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "/index.html",
+    "background_color": "#5e9ca0",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#5e9ca0"
+}

@@ -1,0 +1,217 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #5e9ca0;
+    color: white;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: #d3f0f2;
+}
+
+.search-container {
+    margin-top: 10px;
+}
+
+.search-container input {
+    padding: 5px;
+    font-size: 1em;
+}
+
+.search-container button {
+    padding: 5px;
+    font-size: 1em;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    background-color: #d3f0f2;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    border-bottom: 2px solid #5e9ca0;
+    padding-bottom: 10px;
+}
+
+#daily-devotional {
+    background-color: #fff4e6;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#sermons {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#sermon-videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sermon-videos video {
+    max-width: 100%;
+    border: 1px solid #ccc;
+}
+
+#events {
+    background-color: #e8f5e9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#events ul {
+    list-style: none;
+    padding: 0;
+}
+
+#events ul li {
+    margin: 10px 0;
+}
+
+#prayer-wall {
+    background-color: #fff4e6;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#prayer-form {
+    margin-bottom: 20px;
+}
+
+#prayer-form textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    resize: vertical;
+}
+
+#prayer-form button {
+    padding: 10px 20px;
+    background-color: #5e9ca0;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#prayers .prayer-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.social-share {
+    margin-top: 15px;
+}
+
+.social-share p {
+    margin: 0;
+}
+
+.social-share a {
+    margin-right: 10px;
+    color: #5e9ca0;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.social-share a:hover {
+    color: #333;
+}
+
+footer {
+    background-color: #5e9ca0;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Image Carousel */
+.image-carousel {
+    text-align: center;
+    margin: 30px 0;
+}
+
+#carousel-container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.carousel-image {
+    position: absolute;
+    width: 100%;
+    height: 105%;
+    display: none;
+}
+
+.carousel-image.active {
+    display: block;
+}
+
+#next-image-btn {
+    margin-top: 2px;
+    padding: 2px 4px;
+    background-color: #5e9ca0;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    #sermon-videos video {
+        width: 100%;
+    }
+}
